@@ -32,7 +32,7 @@ The project analyzes these discrepancies to identify the root causes and provide
 
 **Dataset Source:**  
 
-The primary dataset used for this analysis is the **"rides_data.csv"** [Download rides_data.csv](https://github.com/rawatabhinav368/Hospital-Supply-Chain-Inventory-Optimization/blob/main/inventory_data.csv) file, which was downloaded from Kaggle's [Bangalore Rapido Ride Services Dataset](https://www.kaggle.com/datasets/vishaldeoprasad/bangalore-rapido-ride-services-dataset?select=rides_data.csv).  This dataset contains detailed information about Bangalore Rapido Ride Services, including the following features:
+The primary dataset used for this analysis is the **"delivery_data.csv"** [Download delivery data.csv](https://github.com/rawatabhinav368/Discrepancy-Analysis-and-Insights-from-Delhivery-Logistics-Dataset-/blob/main/Delhivery%20Data.zip) file, which was downloaded from Kaggle's [Delhivery DataSet](https://www.kaggle.com/datasets/santanukundu/delhivery-dataset).  This dataset contains detailed information about Delhivery Logistics Data, including the following features:
 
 **Key Attributes:**  
 
@@ -63,6 +63,16 @@ The primary dataset used for this analysis is the **"rides_data.csv"** [Download
 1. **Python**: 
     Libraries Used: - Pandas , Numpy, Matplotlib, Seaborn, Plotly, Warnings.
 
+2. **Power Bi**: 
+   - Power BI was used for data visualization. It helped in creating an interactive dashboard to analyze Delhivery logistics data, monitor trip efficiency, and identify trends in real-time. This provided key insights into delivery performance by comparing actual and estimated metrics. The dashboard serves as a comprehensive tool for stakeholders to analyze trip discrepancies and make data-driven decisions.
+
+
+   - ## Delhivery Logistics Discrepency And Efficiency Dashboard 
+
+Click the image below to view the dashboard:
+
+[![Rapido Banglore Service and Demand Anlytics Dashboard](https://github.com/rawatabhinav368/Banglore-RapidoRide-Analytics-Trends-Demand-Forecasting/blob/main/RapidoRide%20Trend%20Bangalore%20Analytics%20And%20Demand%20Forecasting.png)](https://github.com/rawatabhinav368/Banglore-RapidoRide-Analytics-Trends-Demand-Forecasting/blob/main/RapidoRide%20Trend%20Bangalore%20Analytics%20And%20Demand%20Forecasting.png)
+
 ### Data Cleaning/Preparation
 
   In the initital data preparation pharase, we preformed the following tasks:
@@ -71,10 +81,16 @@ The primary dataset used for this analysis is the **"rides_data.csv"** [Download
   
   2. Checking for missing values -
 
-* There was 5036 null values in our data set, for all cancelled ride (ride_charge	misc_charge	total_fare	payment_method) it shows NaN. 
-  A canceled ride does not incur any charges, so filling 0.
-* No transaction occurred, "Not Applicable" is a meaningful label for payment method.
-* Created canceled column : 1 for canceled rides, 0 for all other rides.
+The missing values in the source_name and destination_name columns have been successfully filled with "Unknown".
+
+* Unique values in source_name after filling missing values: Unique values in source_name after filling missing values:
+
+['Anand_VUNagar_DC (Gujarat)' 'Khambhat_MotvdDPP_D (Gujarat)' 'Bhiwandi_Mankoli_HB (Maharashtra)' ... 'Dwarka_StnRoad_DC (Gujarat)' 'Bengaluru_Nelmngla_L (Karnataka)' 'Kulithalai_AnnaNGR_D (Tamil Nadu)']
+
+* Unique values in destination_name after filling missing values: Unique values in destination_name after filling missing values:
+
+['Khambhat_MotvdDPP_D (Gujarat)' 'Anand_Vaghasi_IP (Gujarat)' 'Pune_Tathawde_H (Maharashtra)' ... 'Chennai_Mylapore (Tamil Nadu)' 'Naraingarh_Ward2DPP_D (Haryana)' 'Mumbai_Ghansoli_DC (Maharashtra)']
+
 
   ### Exploratory data analysis (EDA)
  
