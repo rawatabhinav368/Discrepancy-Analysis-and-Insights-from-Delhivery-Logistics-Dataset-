@@ -78,34 +78,51 @@ The primary dataset used for this analysis is the **"rides_data.csv"** [Download
 
   ### Exploratory data analysis (EDA)
  
-  EDA involves exploring the ride data to answer key questions, such as:
+  EDA involves exploring the delivery logistics data to answer key questions, such as:
 
-  - Which service type (e.g., Bike, Auto, Cab) is most preferred by users?
-  - What are the peak demand hours for each service type?
-  - How do service preferences change throughout the day or week?
-  - What proportion of rides are completed versus canceled?
-  - Which payment methods are most popular among users?
-  - How strongly are features like distance, duration, and fare related?
-  - Are there specific periods that contribute significantly to revenue spikes?
-  - 
+  -Which service type (e.g., FTL, Carting, etc.) is most frequently used?
+
+  -What are the peak hours for trip creation or completion?
+
+  -How do trip preferences or efficiency metrics change throughout the day or week?
+
+  -What is the proportion of trips with positive time discrepancies versus negative or no discrepancies?
+
+  -Which source and destination centers have the highest average trip delays?
+
+  -How strongly are features like trip duration, distance, and cutoff factor related to the time and distance discrepancies?
+
+  -Are there specific months or seasons that contribute significantly to a rise in delivery discrepancies?
+   
 
 ### Data Analysis 
 
 Including some intresting code/features worked with 
 
 
-### Results/Findings
+## *To summarize our analysis:*
 
-The analysis results are summarized as follows:
-* High demand for bike services during early mornings, auto and cab demand peaks in the afternoon and evening.
-* Ride counts fluctuate over time, with consistent peaks during specific periods.
-* Paytm and GPay are the most popular payment methods, possibly influenced by promotions.
-* Bike services are the most preferred, offering consistent ride durations, while auto and cab services show more variability.
-*  ARIMA and SARIMAX models suggest growing demand with daily fluctuations.
+* ### *Data Cleaning and Preparation:*
 
-  ## Recommendations
-* Increase bike availability during morning hours and prioritize auto/cab services in the evening.
-* Promote bike services as a cost-effective, quick option for short-distance travel.
-* For auto and cab services, focus on improving ride consistency by reducing variability in ride durations (e.g., through better route optimization or partnerships with local authorities to reduce traffic bottlenecks).
-*  Capitalize on Paytm and GPay’s popularity by offering time-limited discounts to further drive engagement.
-*  Promote premium cab services during evenings for social outings or corporate travel to attract higher-paying customers.
+   * *Filled missing values in source_name and destination_name with "Unknown".*
+   * *Converted timestamp columns to datetime format.*
+
+* ### *Exploratory Data Analysis (EDA):*
+
+   * *Visualized the distribution of trip durations and distances.*
+   * *Analyzed the relationship between trip duration and distance.*
+   * *Examined the impact of route type and cutoff factors on trip duration.*
+   * *Compared actual times and distances with OSRM estimated times and distances.*
+
+* ### *Discrepancy Analysis*
+
+   * *Calculated discrepancies between actual and estimated times/distances.*
+   * *Performed correlation analysis to identify key factors contributing to discrepancies.*
+   * *Built regression models to quantify the impact of these factors on discrepancies.*
+ 
+ ## *Key Findings:* 
+
+   * *The cutoff_factor and start_scan_to_end_scan are significant contributors to the discrepancies between actual and estimated times/distances.*
+    
+   * *The regression models showed high R-squared values, indicating that the selected features explain a significant portion of the variance in the discrepancies.*
+* *These insights can help Delhivery optimize their logistics operations by focusing on improving the factors that contribute to discrepancies, such as refining cutoff times and optimizing the time from start scan to end scan.*
