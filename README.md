@@ -71,7 +71,7 @@ The primary dataset used for this analysis is the **"delivery_data.csv"** [Downl
 
 Click the image below to view the dashboard:
 
-[![Rapido Banglore Service and Demand Anlytics Dashboard](https://github.com/rawatabhinav368/Banglore-RapidoRide-Analytics-Trends-Demand-Forecasting/blob/main/RapidoRide%20Trend%20Bangalore%20Analytics%20And%20Demand%20Forecasting.png)](https://github.com/rawatabhinav368/Banglore-RapidoRide-Analytics-Trends-Demand-Forecasting/blob/main/RapidoRide%20Trend%20Bangalore%20Analytics%20And%20Demand%20Forecasting.png)
+[![Delhivery Logistics Discrepency And Efficiency Dashboard ](https://github.com/rawatabhinav368/Discrepancy-Analysis-and-Insights-from-Delhivery-Logistics-Dataset-/blob/main/Delhivery%20Logistics%20Discrepancy%20%26%20Efficiency%20Dashboard.PNG)](https://github.com/rawatabhinav368/Discrepancy-Analysis-and-Insights-from-Delhivery-Logistics-Dataset-/blob/main/Delhivery%20Logistics%20Discrepancy%20%26%20Efficiency%20Dashboard.PNG)
 
 ### Data Cleaning/Preparation
 
