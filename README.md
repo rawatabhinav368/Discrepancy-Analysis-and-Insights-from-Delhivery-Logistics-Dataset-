@@ -9,8 +9,7 @@
 5. [Data Cleaning & Preparation](#data-cleaning--preparation)  
 6. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)  
 7. [Data Analysis](#data-analysis)  
-8. [Results & Findings](#results--findings)  
-9. [Recommendations](#recommendations)  
+8. [Key Findings](#KeyFindings)  
 
 ---
 
